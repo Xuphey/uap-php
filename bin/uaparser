@@ -26,6 +26,7 @@ $application->add(new ConvertCommand($resourceDirectory, $defaultYamlFile));
 $application->add(new UpdateCommand($resourceDirectory));
 $application->add(new ParserCommand());
 $application->add(new LogfileCommand());
+$application->add(new LogfileParseCommand());
 $application->add(new FetchCommand($defaultYamlFile));
 
 $application->run();
